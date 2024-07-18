@@ -37,7 +37,8 @@ int main() {
     mongocxx::client client(uri);
 
     auto db = client["bossds3"];
-    auto collection = db["bosses"];
+    auto collection_bosses = db["bosses"];
+    auto collection_locations = db["locations"];
 
     // Create a Document
     {
@@ -54,7 +55,7 @@ int main() {
         auto name = element.get_string().value;  // For C++ driver version < 3.7.0, use get_utf8()
         assert(0 == name.compare("MongoDB"));
     }
-
+    /*
     // Insert One Document: { "i": 0 }
     {
         auto insert_one_result = collection.insert_one(make_document(kvp("Iudex Gundyr", "Cemetery of Ash")));
@@ -62,10 +63,12 @@ int main() {
         auto doc_id = insert_one_result->inserted_id();
         assert(doc_id.type() == bsoncxx::type::k_oid);
     }
+    */
 
     // Insert Multiple Documents: { "i": 1 } and { "i": 2 }
     {
         std::vector<bsoncxx::document::value> documents;
+        documents.push_back(make_document(kvp("name", "Iudex Gundry")));
         documents.push_back(make_document(kvp("name", "Vordt of the Boreal Valley")));
         documents.push_back(make_document(kvp("name", "Curse-Rotted Greatwood")));
         documents.push_back(make_document(kvp("name", "Crystal Sage")));
@@ -85,7 +88,7 @@ int main() {
         documents.push_back(make_document(kvp("name", "Nameless King")));
         documents.push_back(make_document(kvp("name", "Soul of Cinder")));
 
-        auto insert_many_result = collection.insert_many(documents);
+        auto insert_many_result = collection_bosses.insert_many(documents);
         assert(insert_many_result);  // Acknowledged writes return results.
         auto doc0_id = insert_many_result->inserted_ids().at(0);
         auto doc1_id = insert_many_result->inserted_ids().at(1);
@@ -111,8 +114,12 @@ int main() {
         locations.push_back(make_document(kvp("name", "Untended Graves")));
         locations.push_back(make_document(kvp("name", "Archdragon Peak")));
         locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
-    }
 
+        auto insert_many_locations_result = collection_locations.insert_many(locations);
+        assert(insert_many_locations_result);  // Acknowledged writes return results.
+        
+    }
+    /*
     // Find a Single Document in a Collection
     {
         auto find_one_result = collection.find_one({});
@@ -121,10 +128,11 @@ int main() {
         }
         assert(find_one_result);
     }
+    */
 
     // Find All Documents in a Collection
     {
-        auto cursor_all = collection.find({});
+        auto cursor_all = collection_bosses.find({});
         for (auto doc : cursor_all) {
             // Do something with doc
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
@@ -133,8 +141,8 @@ int main() {
 
     // Print All Documents in a Collection
     {
-        auto cursor_all = collection.find({});
-        std::cout << "collection " << collection.name()
+        auto cursor_all = collection_bosses.find({});
+        std::cout << "collection " << collection_bosses.name()
                   << " contains these documents:" << std::endl;
         for (auto doc : cursor_all) {
             std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
@@ -144,7 +152,7 @@ int main() {
 
     // Get A Single Document That Matches a Filter
     {
-        auto find_one_filtered_result = collection.find_one(make_document(kvp("i", 0)));
+        auto find_one_filtered_result = collection_bosses.find_one(make_document(kvp("i", 0)));
         if (find_one_filtered_result) {
             // Do something with *find_one_filtered_result
         }
@@ -153,7 +161,7 @@ int main() {
     // Get All Documents That Match a Filter
     {
         auto cursor_filtered =
-            collection.find(make_document(kvp("i", make_document(kvp("$gt", 0), kvp("$lte", 2)))));
+            collection_bosses.find(make_document(kvp("i", make_document(kvp("$gt", 0), kvp("$lte", 2)))));
         for (auto doc : cursor_filtered) {
             // Do something with doc
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
@@ -200,9 +208,11 @@ int main() {
     // Create Indexes
     {
         auto index_specification = make_document(kvp("i", 1));
-        collection.create_index(std::move(index_specification));
+        collection_bosses.create_index(std::move(index_specification));
     }
-
+    /*
     // Drop collection to clean up.
-    // collection.drop();
+    collection_bosses.drop();
+    collection_locations.drop();
+    */
 }
