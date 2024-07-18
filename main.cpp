@@ -31,6 +31,11 @@ using bsoncxx::builder::basic::kvp;
 using bsoncxx::builder::basic::make_array;
 using bsoncxx::builder::basic::make_document;
 
+// verify if a doc exists
+bool check_if_exists(mongocxx::collection& collection, const std::string& field, const std::string& value) {
+    auto doc = collection.find_one(make_document(kvp(field, value)));
+    return doc ? true : false;
+}
 int main() {
     mongocxx::instance instance{};  // This should be done only once.
     mongocxx::uri uri("mongodb://localhost:27017");
