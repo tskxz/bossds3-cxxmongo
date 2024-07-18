@@ -31,6 +31,11 @@ using bsoncxx::builder::basic::kvp;
 using bsoncxx::builder::basic::make_array;
 using bsoncxx::builder::basic::make_document;
 
+// verify if a doc exists
+bool check_if_exists(mongocxx::collection& collection, const std::string& field, const std::string& value) {
+    auto doc = collection.find_one(make_document(kvp(field, value)));
+    return doc ? true : false;
+}
 int main() {
     mongocxx::instance instance{};  // This should be done only once.
     mongocxx::uri uri("mongodb://localhost:27017");
@@ -68,56 +73,127 @@ int main() {
     // Insert Multiple Documents: { "i": 1 } and { "i": 2 }
     {
         std::vector<bsoncxx::document::value> documents;
-        documents.push_back(make_document(kvp("name", "Iudex Gundry")));
-        documents.push_back(make_document(kvp("name", "Vordt of the Boreal Valley")));
-        documents.push_back(make_document(kvp("name", "Curse-Rotted Greatwood")));
-        documents.push_back(make_document(kvp("name", "Crystal Sage")));
-        documents.push_back(make_document(kvp("name", "Abyss Watchers")));
-        documents.push_back(make_document(kvp("name", "Deacons of the Deep")));
-        documents.push_back(make_document(kvp("name", "High Lord of Wolnir")));
-        documents.push_back(make_document(kvp("name", "Old Demon King")));
-        documents.push_back(make_document(kvp("name", "Pontiff Sulyvahn")));
-        documents.push_back(make_document(kvp("name", "Yhorm the Giant")));
-        documents.push_back(make_document(kvp("name", "Aldrich, Devourer of Gods")));
-        documents.push_back(make_document(kvp("name", "Dancer of the Boreal Valley")));
-        documents.push_back(make_document(kvp("name", "Dragonslayer Armour")));
-        documents.push_back(make_document(kvp("name", "Oceiros, the Consumed King")));
-        documents.push_back(make_document(kvp("name", "Champion Gundyr")));
-        documents.push_back(make_document(kvp("name", "Lothric, Younger Prince")));
-        documents.push_back(make_document(kvp("name", "Ancient Wyvern")));
-        documents.push_back(make_document(kvp("name", "Nameless King")));
-        documents.push_back(make_document(kvp("name", "Soul of Cinder")));
+        if(!check_if_exists(collection_bosses, "name", "Iudex Gundry")){
+            documents.push_back(make_document(kvp("name", "Iudex Gundry")));
+        }
+        
+        if(!check_if_exists(collection_bosses, "name", "Vordt of the Boreal Valley")){
+            documents.push_back(make_document(kvp("name", "Vordt of the Boreal Valley")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Curse-Rotted Greatwood")){
+            documents.push_back(make_document(kvp("name", "Curse-Rotted Greatwood")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Crystal Sage")){
+            documents.push_back(make_document(kvp("name", "Crystal Sage")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Abyss Watchers")){
+            documents.push_back(make_document(kvp("name", "Abyss Watchers")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Deacons of the Deep")){
+            documents.push_back(make_document(kvp("name", "Deacons of the Deep")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "High Lord of Wolnir")){
+            documents.push_back(make_document(kvp("name", "High Lord of Wolnir")));
 
-        auto insert_many_result = collection_bosses.insert_many(documents);
-        assert(insert_many_result);  // Acknowledged writes return results.
-        auto doc0_id = insert_many_result->inserted_ids().at(0);
-        auto doc1_id = insert_many_result->inserted_ids().at(1);
-        assert(doc0_id.type() == bsoncxx::type::k_oid);
-        assert(doc1_id.type() == bsoncxx::type::k_oid);
+        }
+        if(!check_if_exists(collection_bosses, "name", "Old Demon King")){
+            documents.push_back(make_document(kvp("name", "Old Demon King")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Pontiff Sulyvahn")){
+            documents.push_back(make_document(kvp("name", "Pontiff Sulyvahn")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Yhorm the Giant")){
+            documents.push_back(make_document(kvp("name", "Yhorm the Giant")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Aldrich, Devorer of Gods")){
+            documents.push_back(make_document(kvp("name", "Aldrich, Devourer of Gods")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Dancer of the Boreal Valley")){
+            documents.push_back(make_document(kvp("name", "Dancer of the Boreal Valley")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Dragonslayer Armour")){
+            documents.push_back(make_document(kvp("name", "Dragonslayer Armour")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Oceiros, the Consumed King")){
+            documents.push_back(make_document(kvp("name", "Oceiros, the Consumed King")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Champion Gundyr")){
+            documents.push_back(make_document(kvp("name", "Champion Gundyr")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Lothric, Younger Prince")){
+            documents.push_back(make_document(kvp("name", "Lothric, Younger Prince")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Ancient Wyvern")){
+            documents.push_back(make_document(kvp("name", "Ancient Wyvern")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Nameless King")){
+            documents.push_back(make_document(kvp("name", "Nameless King")));
+        }
+        if(!check_if_exists(collection_bosses, "name", "Soul of Cinder")){
+            documents.push_back(make_document(kvp("name", "Soul of Cinder")));
+        }
+
+        if(!documents.empty()){
+            auto insert_many_result = collection_bosses.insert_many(documents);
+            assert(insert_many_result);
+        }
     }
 
     {
         std::vector<bsoncxx::document::value> locations;
+        if (!check_if_exists(collection_locations, "name", "Cemetery of Ash")) {
         locations.push_back(make_document(kvp("name", "Cemetery of Ash")));
-        locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
-        locations.push_back(make_document(kvp("name", "Undead Settlement")));
-        locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
-        locations.push_back(make_document(kvp("name", "Farron Keep")));
-        locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
-        locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
-        locations.push_back(make_document(kvp("name", "Smouldering Lake")));
-        locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
-        locations.push_back(make_document(kvp("name", "Profaned Capital")));
-        locations.push_back(make_document(kvp("name", "Anor Londo")));
-        locations.push_back(make_document(kvp("name", "Lothric Castle")));
-        locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
-        locations.push_back(make_document(kvp("name", "Untended Graves")));
-        locations.push_back(make_document(kvp("name", "Archdragon Peak")));
-        locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+        }
+        if (!check_if_exists(collection_locations, "name", "High Wall of Lothric")) {
+            locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Undead Settlement")) {
+            locations.push_back(make_document(kvp("name", "Undead Settlement")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Road of Sacrifices")) {
+            locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Farron Keep")) {
+            locations.push_back(make_document(kvp("name", "Farron Keep")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Cathedral of the Deep")) {
+            locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Catacombs of Carthus")) {
+            locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Smouldering Lake")) {
+            locations.push_back(make_document(kvp("name", "Smouldering Lake")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Irithyll of the Boreal Valley")) {
+            locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Profaned Capital")) {
+            locations.push_back(make_document(kvp("name", "Profaned Capital")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Anor Londo")) {
+            locations.push_back(make_document(kvp("name", "Anor Londo")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Lothric Castle")) {
+            locations.push_back(make_document(kvp("name", "Lothric Castle")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Consumed King's Garden")) {
+            locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Untended Graves")) {
+            locations.push_back(make_document(kvp("name", "Untended Graves")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Archdragon Peak")) {
+            locations.push_back(make_document(kvp("name", "Archdragon Peak")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Kiln of the First Flame")) {
+            locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+        }
 
-        auto insert_many_locations_result = collection_locations.insert_many(locations);
-        assert(insert_many_locations_result);  // Acknowledged writes return results.
-        
+        if (!locations.empty()) {
+            auto insert_many_locations_result = collection_locations.insert_many(locations);
+            assert(insert_many_locations_result);  // Acknowledged writes return results.
+        }
     }
     /*
     // Find a Single Document in a Collection
@@ -240,6 +316,15 @@ int main() {
 
     
     // Drop collection to clean up.
+    std::cout << "Do you want to drop database ? [1/0]" << std::endl;
+    int input;
+    std::cin >> input;
+    if(input == 1) {
+        collection_bosses.drop();
+        collection_locations.drop();
+    } else {
+        return 0;
+    }
     // collection_bosses.drop();
     // collection_locations.drop();
     
