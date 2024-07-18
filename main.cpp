@@ -240,6 +240,15 @@ int main() {
 
     
     // Drop collection to clean up.
+    std::cout << "Do you want to drop database ? [1/0]" << std::endl;
+    int input;
+    std::cin >> input;
+    if(input == 1) {
+        collection_bosses.drop();
+        collection_locations.drop();
+    } else {
+        return 0;
+    }
     // collection_bosses.drop();
     // collection_locations.drop();
     
