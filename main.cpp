@@ -130,9 +130,18 @@ int main() {
     }
     */
 
-    // Find All Documents in a Collection
+    // Find All Documents in a Boss Collection
     {
         auto cursor_all = collection_bosses.find({});
+        for (auto doc : cursor_all) {
+            // Do something with doc
+            assert(doc["_id"].type() == bsoncxx::type::k_oid);
+        }
+    }
+
+    // Find all Documents in Locations Collection
+    {
+        auto cursor_all = collection_locations.find({});
         for (auto doc : cursor_all) {
             // Do something with doc
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
@@ -150,6 +159,17 @@ int main() {
         std::cout << std::endl;
     }
 
+    // Print All Documents in a Locations Collection
+    {
+        auto cursor_all = collection_locations.find({});
+        std::cout << "collection " << collection_locations.name()
+                  << " contains these documents:" << std::endl;
+        for (auto doc : cursor_all) {
+            std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+        }
+        std::cout << std::endl;
+    }
+    /*
     // Get A Single Document That Matches a Filter
     {
         auto find_one_filtered_result = collection_bosses.find_one(make_document(kvp("i", 0)));
@@ -157,6 +177,9 @@ int main() {
             // Do something with *find_one_filtered_result
         }
     }
+    */
+
+   /*
 
     // Get All Documents That Match a Filter
     {
@@ -167,6 +190,7 @@ int main() {
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
         }
     }
+    */
 
     /*
     // Update a Single Document
@@ -205,14 +229,18 @@ int main() {
     }
     */
 
+   /*
+
     // Create Indexes
     {
         auto index_specification = make_document(kvp("i", 1));
         collection_bosses.create_index(std::move(index_specification));
     }
-    /*
-    // Drop collection to clean up.
-    collection_bosses.drop();
-    collection_locations.drop();
     */
+
+    
+    // Drop collection to clean up.
+    // collection_bosses.drop();
+    // collection_locations.drop();
+    
 }
