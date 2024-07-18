@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/test_bson.dir/array.cpp.o"
+  "CMakeFiles/test_bson.dir/array.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_b_date.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_b_date.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_builder.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_builder.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_get_values.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_get_values.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_serialization.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_serialization.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_types.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_types.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_util_itoa.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_util_itoa.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_validate.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_validate.cpp.o.d"
+  "CMakeFiles/test_bson.dir/bson_value.cpp.o"
+  "CMakeFiles/test_bson.dir/bson_value.cpp.o.d"
+  "CMakeFiles/test_bson.dir/json.cpp.o"
+  "CMakeFiles/test_bson.dir/json.cpp.o.d"
+  "CMakeFiles/test_bson.dir/make_unique.test.cpp.o"
+  "CMakeFiles/test_bson.dir/make_unique.test.cpp.o.d"
+  "CMakeFiles/test_bson.dir/oid.cpp.o"
+  "CMakeFiles/test_bson.dir/oid.cpp.o.d"
+  "CMakeFiles/test_bson.dir/optional.test.cpp.o"
+  "CMakeFiles/test_bson.dir/optional.test.cpp.o.d"
+  "CMakeFiles/test_bson.dir/string_view.test.cpp.o"
+  "CMakeFiles/test_bson.dir/string_view.test.cpp.o.d"
+  "CMakeFiles/test_bson.dir/type_traits.test.cpp.o"
+  "CMakeFiles/test_bson.dir/type_traits.test.cpp.o.d"
+  "CMakeFiles/test_bson.dir/view_or_value.cpp.o"
+  "CMakeFiles/test_bson.dir/view_or_value.cpp.o.d"
+  "test_bson"
+  "test_bson.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/test_bson.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/CMakeFiles/ep_mnmlstc_core-populate"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/CMakeFiles/ep_mnmlstc_core-populate.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/CMakeFiles/ep_mnmlstc_core-populate-complete.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-build.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-configure.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-download.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-install.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-patch.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-test.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-subbuild/ep_mnmlstc_core-populate-prefix/src/ep_mnmlstc_core-populate-stamp/ep_mnmlstc_core-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ep_mnmlstc_core-populate"
+		],
+		"name" : "ep_mnmlstc_core-populate"
+	}
+}

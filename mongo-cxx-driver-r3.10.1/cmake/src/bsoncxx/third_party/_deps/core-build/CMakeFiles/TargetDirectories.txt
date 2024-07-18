@@ -1,0 +1,6 @@
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/edit_cache.dir
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/rebuild_cache.dir
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/list_install_components.dir
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/install.dir
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/install/local.dir
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/install/strip.dir

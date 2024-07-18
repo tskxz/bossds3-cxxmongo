@@ -1,0 +1,919 @@
+The system is: Linux - 6.1.0-21-amd64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/3.25.1/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-tkuOrU
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7d4b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7d4b.dir/build.make CMakeFiles/cmTC_b7d4b.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-tkuOrU'
+Building CXX object CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b7d4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccdoxTk0.s
+GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/12
+ /usr/include/x86_64-linux-gnu/c++/12
+ /usr/include/c++/12/backward
+ /usr/lib/gcc/x86_64-linux-gnu/12/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/'
+ as -v --64 -o CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdoxTk0.s
+GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_b7d4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d4b.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7d4b 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d4b.'
+ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf1dC9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b7d4b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d4b.'
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-tkuOrU'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/12]
+    add: [/usr/include/x86_64-linux-gnu/c++/12]
+    add: [/usr/include/c++/12/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/12] ==> [/usr/include/c++/12]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/12] ==> [/usr/include/x86_64-linux-gnu/c++/12]
+  collapse include dir [/usr/include/c++/12/backward] ==> [/usr/include/c++/12/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/12;/usr/include/x86_64-linux-gnu/c++/12;/usr/include/c++/12/backward;/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-tkuOrU]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7d4b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7d4b.dir/build.make CMakeFiles/cmTC_b7d4b.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-tkuOrU']
+  ignore line: [Building CXX object CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b7d4b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccdoxTk0.s]
+  ignore line: [GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/12]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/12]
+  ignore line: [ /usr/include/c++/12/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 62b090dbbefa50644117a3c13d47369a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdoxTk0.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_b7d4b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7d4b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b7d4b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b7d4b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b7d4b.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccf1dC9Z.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b7d4b /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccf1dC9Z.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b7d4b] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
+    arg [CMakeFiles/cmTC_b7d4b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/3.25.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-rjZ3DO
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_33e28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33e28.dir/build.make CMakeFiles/cmTC_33e28.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-rjZ3DO'
+Building C object CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33e28.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccwQ0ZrX.s
+GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/12/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.1-p1, MPC version 1.3.1, isl version isl-0.25-GMP
+
+warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/'
+ as -v --64 -o CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o /tmp/ccwQ0ZrX.s
+GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_33e28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33e28.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -o cmTC_33e28 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Debian 12.2.0-14) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33e28' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33e28.'
+ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccY0uPWW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_33e28 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33e28' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33e28.'
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-rjZ3DO'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-rjZ3DO]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_33e28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_33e28.dir/build.make CMakeFiles/cmTC_33e28.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-rjZ3DO']
+  ignore line: [Building C object CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33e28.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccwQ0ZrX.s]
+  ignore line: [GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Debian 12.2.0-14) version 12.2.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.1-p1  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: []
+  ignore line: [warning: MPFR header version 4.1.1-p1 differs from library version 4.2.0.]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: cc72d2b9b5048fedc2be9051c917b40b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o /tmp/ccwQ0ZrX.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.40]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_33e28]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33e28.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -o cmTC_33e28 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 12.2.0-14' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-bTRWOB/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Debian 12.2.0-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_33e28' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_33e28.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccY0uPWW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_33e28 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccY0uPWW.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_33e28] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
+    arg [CMakeFiles/cmTC_33e28.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-x0mKd1
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa47e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aa47e.dir/build.make CMakeFiles/cmTC_aa47e.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-x0mKd1'
+Building C object CMakeFiles/cmTC_aa47e.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aa47e.dir/src.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-x0mKd1/src.c
+Linking C executable cmTC_aa47e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa47e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_aa47e.dir/src.c.o -o cmTC_aa47e 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-x0mKd1'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eOwzfK
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3604e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3604e.dir/build.make CMakeFiles/cmTC_3604e.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eOwzfK'
+Building C object CMakeFiles/cmTC_3604e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_3604e.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eOwzfK/CheckSymbolExists.c
+Linking C executable cmTC_3604e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3604e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3604e.dir/CheckSymbolExists.c.o -o cmTC_3604e  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eOwzfK'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test BSON_HAVE_TIMESPEC succeeded with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-J4rbXk
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7c7aa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7c7aa.dir/build.make CMakeFiles/cmTC_7c7aa.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-J4rbXk'
+Building C object CMakeFiles/cmTC_7c7aa.dir/src.c.o
+/usr/bin/cc -DBSON_HAVE_TIMESPEC -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_7c7aa.dir/src.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-J4rbXk/src.c
+Linking C executable cmTC_7c7aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c7aa.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_7c7aa.dir/src.c.o -o cmTC_7c7aa  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-J4rbXk'
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct timespec *)0)->tv_sec);
+  return 0;
+}
+
+
+Determining if the gmtime_r exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Yiv63b
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1cbb7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1cbb7.dir/build.make CMakeFiles/cmTC_1cbb7.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Yiv63b'
+Building C object CMakeFiles/cmTC_1cbb7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_1cbb7.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Yiv63b/CheckSymbolExists.c
+Linking C executable cmTC_1cbb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cbb7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_1cbb7.dir/CheckSymbolExists.c.o -o cmTC_1cbb7  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Yiv63b'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gmtime_r
+  return ((int*)(&gmtime_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function rand_r exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ZaZ5gS
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44a7f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44a7f.dir/build.make CMakeFiles/cmTC_44a7f.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ZaZ5gS'
+Building C object CMakeFiles/cmTC_44a7f.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -DCHECK_FUNCTION_EXISTS=rand_r -std=c99 -o CMakeFiles/cmTC_44a7f.dir/CheckFunctionExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ZaZ5gS/CheckFunctionExists.c
+Linking C executable cmTC_44a7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44a7f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=rand_r CMakeFiles/cmTC_44a7f.dir/CheckFunctionExists.c.o -o cmTC_44a7f  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ZaZ5gS'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LheeAy
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_412f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_412f7.dir/build.make CMakeFiles/cmTC_412f7.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LheeAy'
+Building C object CMakeFiles/cmTC_412f7.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_412f7.dir/CheckIncludeFile.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LheeAy/CheckIncludeFile.c
+Linking C executable cmTC_412f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_412f7.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_412f7.dir/CheckIncludeFile.c.o -o cmTC_412f7  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LheeAy'
+
+
+
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-gol2vc
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17879/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17879.dir/build.make CMakeFiles/cmTC_17879.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-gol2vc'
+Building C object CMakeFiles/cmTC_17879.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_17879.dir/CheckIncludeFile.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-gol2vc/CheckIncludeFile.c
+Linking C executable cmTC_17879
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17879.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_17879.dir/CheckIncludeFile.c.o -o cmTC_17879  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-gol2vc'
+
+
+
+Determining if the clock_gettime exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-KNv88O
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55b5d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55b5d.dir/build.make CMakeFiles/cmTC_55b5d.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-KNv88O'
+Building C object CMakeFiles/cmTC_55b5d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_55b5d.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-KNv88O/CheckSymbolExists.c
+Linking C executable cmTC_55b5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55b5d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_55b5d.dir/CheckSymbolExists.c.o -o cmTC_55b5d  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-KNv88O'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef clock_gettime
+  return ((int*)(&clock_gettime))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strnlen exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-UyJnLN
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6d757/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d757.dir/build.make CMakeFiles/cmTC_6d757.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-UyJnLN'
+Building C object CMakeFiles/cmTC_6d757.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_6d757.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-UyJnLN/CheckSymbolExists.c
+Linking C executable cmTC_6d757
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d757.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6d757.dir/CheckSymbolExists.c.o -o cmTC_6d757  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-UyJnLN'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strnlen
+  return ((int*)(&strnlen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LHqYbf
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ac6dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ac6dd.dir/build.make CMakeFiles/cmTC_ac6dd.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LHqYbf'
+Building C object CMakeFiles/cmTC_ac6dd.dir/HAVE_UNISTD_H.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_ac6dd.dir/HAVE_UNISTD_H.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LHqYbf/HAVE_UNISTD_H.c
+Linking C executable cmTC_ac6dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac6dd.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ac6dd.dir/HAVE_UNISTD_H.c.o -o cmTC_ac6dd  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-LHqYbf'
+
+
+
+Determining if files stdarg.h exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-HIxwAn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_134df/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_134df.dir/build.make CMakeFiles/cmTC_134df.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-HIxwAn'
+Building C object CMakeFiles/cmTC_134df.dir/HAVE_STDARG_H.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_134df.dir/HAVE_STDARG_H.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-HIxwAn/HAVE_STDARG_H.c
+Linking C executable cmTC_134df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_134df.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_134df.dir/HAVE_STDARG_H.c.o -o cmTC_134df  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-HIxwAn'
+
+
+
+Determining if the ASN1_STRING_get0_data exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-X79vMe
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f3468/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f3468.dir/build.make CMakeFiles/cmTC_f3468.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-X79vMe'
+Building C object CMakeFiles/cmTC_f3468.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_f3468.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-X79vMe/CheckSymbolExists.c
+Linking C executable cmTC_f3468
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3468.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_f3468.dir/CheckSymbolExists.c.o -o cmTC_f3468  /usr/lib/x86_64-linux-gnu/librt.a /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-X79vMe'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <openssl/asn1.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ASN1_STRING_get0_data
+  return ((int*)(&ASN1_STRING_get0_data))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-r7ndva
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6511/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6511.dir/build.make CMakeFiles/cmTC_b6511.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-r7ndva'
+Building C object CMakeFiles/cmTC_b6511.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_b6511.dir/CheckIncludeFile.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-r7ndva/CheckIncludeFile.c
+Linking C executable cmTC_b6511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6511.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_b6511.dir/CheckIncludeFile.c.o -o cmTC_b6511  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-r7ndva'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-RpDNsX
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b264d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b264d.dir/build.make CMakeFiles/cmTC_b264d.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-RpDNsX'
+Building C object CMakeFiles/cmTC_b264d.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_b264d.dir/CheckIncludeFile.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-RpDNsX/CheckIncludeFile.c
+Linking C executable cmTC_b264d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b264d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_b264d.dir/CheckIncludeFile.c.o -o cmTC_b264d  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-RpDNsX'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-b5X78u
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c6a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c6a1.dir/build.make CMakeFiles/cmTC_8c6a1.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-b5X78u'
+Building C object CMakeFiles/cmTC_8c6a1.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_8c6a1.dir/CheckIncludeFile.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-b5X78u/CheckIncludeFile.c
+Linking C executable cmTC_8c6a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c6a1.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_8c6a1.dir/CheckIncludeFile.c.o -o cmTC_8c6a1  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-b5X78u'
+
+
+
+Determining size of socklen_t passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-zqX99B
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_28770/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_28770.dir/build.make CMakeFiles/cmTC_28770.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-zqX99B'
+Building C object CMakeFiles/cmTC_28770.dir/HAVE_SOCKLEN.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_28770.dir/HAVE_SOCKLEN.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-zqX99B/HAVE_SOCKLEN.c
+Linking C executable cmTC_28770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28770.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_28770.dir/HAVE_SOCKLEN.c.o -o cmTC_28770  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-zqX99B'
+
+
+
+Determining if the res_nsearch exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-2VW3O9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a5ac9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a5ac9.dir/build.make CMakeFiles/cmTC_a5ac9.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-2VW3O9'
+Building C object CMakeFiles/cmTC_a5ac9.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_a5ac9.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-2VW3O9/CheckSymbolExists.c
+Linking C executable cmTC_a5ac9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5ac9.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a5ac9.dir/CheckSymbolExists.c.o -o cmTC_a5ac9  -lresolv 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-2VW3O9'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <arpa/nameser.h>
+#include <resolv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef res_nsearch
+  return ((int*)(&res_nsearch))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the res_search exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-OvJqRD
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50904/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50904.dir/build.make CMakeFiles/cmTC_50904.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-OvJqRD'
+Building C object CMakeFiles/cmTC_50904.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_50904.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-OvJqRD/CheckSymbolExists.c
+Linking C executable cmTC_50904
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50904.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_50904.dir/CheckSymbolExists.c.o -o cmTC_50904  -lresolv 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-OvJqRD'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <arpa/nameser.h>
+#include <resolv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef res_search
+  return ((int*)(&res_search))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the res_nclose exist passed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-q8psEF
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a1d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a1d2.dir/build.make CMakeFiles/cmTC_6a1d2.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-q8psEF'
+Building C object CMakeFiles/cmTC_6a1d2.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_6a1d2.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-q8psEF/CheckSymbolExists.c
+Linking C executable cmTC_6a1d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a1d2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6a1d2.dir/CheckSymbolExists.c.o -o cmTC_6a1d2  -lresolv 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-q8psEF'
+
+
+File CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <arpa/nameser.h>
+#include <resolv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef res_nclose
+  return ((int*)(&res_nclose))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test MONGOC_HAVE_SS_FAMILY succeeded with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ueK9Bk
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6b41e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b41e.dir/build.make CMakeFiles/cmTC_6b41e.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ueK9Bk'
+Building C object CMakeFiles/cmTC_6b41e.dir/src.c.o
+/usr/bin/cc -DMONGOC_HAVE_SS_FAMILY -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_6b41e.dir/src.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ueK9Bk/src.c
+Linking C executable cmTC_6b41e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b41e.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_6b41e.dir/src.c.o -o cmTC_6b41e  /usr/lib/x86_64-linux-gnu/librt.a 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-ueK9Bk'
+
+
+Source file was:
+
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_storage *)0)->ss_family);
+  return 0;
+}
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_VISIBILITY succeeded with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-8IAjpV
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8621c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8621c.dir/build.make CMakeFiles/cmTC_8621c.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-8IAjpV'
+Building CXX object CMakeFiles/cmTC_8621c.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fvisibility=hidden -std=c++11 -o CMakeFiles/cmTC_8621c.dir/src.cxx.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-8IAjpV/src.cxx
+Linking CXX executable cmTC_8621c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8621c.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_8621c.dir/src.cxx.o -o cmTC_8621c 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-8IAjpV'
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY succeeded with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-PrCB2O
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6cedb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6cedb.dir/build.make CMakeFiles/cmTC_6cedb.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-PrCB2O'
+Building CXX object CMakeFiles/cmTC_6cedb.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -std=c++11 -o CMakeFiles/cmTC_6cedb.dir/src.cxx.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-PrCB2O/src.cxx
+Linking CXX executable cmTC_6cedb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cedb.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_6cedb.dir/src.cxx.o -o cmTC_6cedb 
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-PrCB2O'
+
+
+Source file was:
+int main() { return 0; }
+

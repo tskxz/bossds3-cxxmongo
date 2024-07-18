@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/CMakeFiles/mongo-c-driver-populate"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/CMakeFiles/mongo-c-driver-populate.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/CMakeFiles/mongo-c-driver-populate-complete.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-build.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-configure.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-download.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-install.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-patch.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-test.rule"
+		},
+		{
+			"file" : "/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-subbuild/mongo-c-driver-populate-prefix/src/mongo-c-driver-populate-stamp/mongo-c-driver-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"mongo-c-driver-populate"
+		],
+		"name" : "mongo-c-driver-populate"
+	}
+}

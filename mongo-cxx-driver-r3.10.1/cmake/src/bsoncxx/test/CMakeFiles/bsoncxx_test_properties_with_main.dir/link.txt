@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbsoncxx_test_properties_with_main.a CMakeFiles/bsoncxx_test_properties_with_main.dir/__/__/third_party/catch/main.cpp.o
+/usr/bin/ranlib libbsoncxx_test_properties_with_main.a

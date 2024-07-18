@@ -1,0 +1,14 @@
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/share/cmake/core/core-config-version.cmake
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/share/cmake/core/core-config.cmake
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/utility.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/iterator.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/variant.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/memory.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/type_traits.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/numeric.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/any.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/functional.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/range.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/algorithm.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/string.hpp
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-install/include/core/optional.hpp

@@ -1,0 +1,21 @@
+# Hashes of file build rules.
+f30d839bb9a6092e90c2184130cd1efc CMakeFiles/dist
+6a1273bb5a0fb83b4e89e6ab5d1b3979 CMakeFiles/distcheck
+f30d839bb9a6092e90c2184130cd1efc CMakeFiles/docs
+9c748ac578c9415a5a4b2fb07c980f99 CMakeFiles/docs_dir_current
+1568dc131c15438b3195962e443ab69b CMakeFiles/doxygen-all
+ec3f97bccad717d6b37f500e9c14dc70 CMakeFiles/doxygen-current
+626ed7d09ed1e504170c82669d88d918 CMakeFiles/doxygen-deploy
+b0f9f26a1ce4161e7547eab425b504ea CMakeFiles/format
+370fb790433ded88b8e35a70ccbf9898 CMakeFiles/format-lint
+05d5558d600f90ecb3ce6c0982cdf4d9 CMakeFiles/hugo
+1cab77f0f3ebb1cc09d571d9ca0cf42f CMakeFiles/hugo-deploy
+4abd6536ab1ccb9cddfc1750582ee9e9 CMakeFiles/hugo_dir
+0e2576769625c1eeb50d42ed45adbc64 examples/CMakeFiles/examples
+0e2576769625c1eeb50d42ed45adbc64 examples/CMakeFiles/run-examples
+4737d0ee97c6f2084714cce73ec485a5 generate_uninstall/CMakeFiles/uninstall
+741606b84fc8203067abae38c4ea7815 mongo-cxx-driver-r3.10.1.tar.gz
+b3c86423756efd3e3e9e1eee8fb715f4 src/bsoncxx/cmake/CMakeFiles/generate-libbsoncxx_shared-pc
+bb03e0cd6d5a18bc7d7ad95cb8be8367 src/bsoncxx/cmake/libbsoncxx.pc
+fecf328227c9bb1ef0b3959b2400abb4 src/mongocxx/cmake/CMakeFiles/generate-libmongocxx_shared-pc
+93a81e1d930b3d9ac11bd0ecbf91f925 src/mongocxx/cmake/libmongocxx.pc

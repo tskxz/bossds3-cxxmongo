@@ -1,0 +1,124 @@
+Performing C SOURCE FILE Test HAVE_LLD_LINKER_SUPPORT failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eIsbHb
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5a97/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d5a97.dir/build.make CMakeFiles/cmTC_d5a97.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eIsbHb'
+Building C object CMakeFiles/cmTC_d5a97.dir/src.c.o
+/usr/bin/cc -DHAVE_LLD_LINKER_SUPPORT  -fuse-ld=lld -o CMakeFiles/cmTC_d5a97.dir/src.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eIsbHb/src.c
+Linking C executable cmTC_d5a97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5a97.dir/link.txt --verbose=1
+/usr/bin/cc  -fuse-ld=lld -fuse-ld=lld CMakeFiles/cmTC_d5a97.dir/src.c.o -o cmTC_d5a97 
+collect2: fatal error: cannot find ‘ld’
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d5a97.dir/build.make:99: cmTC_d5a97] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-eIsbHb'
+gmake: *** [Makefile:127: cmTC_d5a97/fast] Error 2
+
+
+Source file was:
+        #include <stdio.h>
+
+        int main (void) {
+            puts ("Hello, world!");
+            return 0;
+        }
+    
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9cfa7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9cfa7.dir/build.make CMakeFiles/cmTC_9cfa7.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N'
+Building C object CMakeFiles/cmTC_9cfa7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_9cfa7.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N/CheckSymbolExists.c
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N/CheckSymbolExists.c: In function ‘main’:
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N/CheckSymbolExists.c:8:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+    8 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_9cfa7.dir/build.make:78: CMakeFiles/cmTC_9cfa7.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Xe6I6N'
+gmake: *** [Makefile:127: cmTC_9cfa7/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sched_getcpu exist failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3e84/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3e84.dir/build.make CMakeFiles/cmTC_a3e84.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC'
+Building C object CMakeFiles/cmTC_a3e84.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_a3e84.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC/CheckSymbolExists.c
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC/CheckSymbolExists.c: In function ‘main’:
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC/CheckSymbolExists.c:8:19: error: ‘sched_getcpu’ undeclared (first use in this function); did you mean ‘sched_getparam’?
+    8 |   return ((int*)(&sched_getcpu))[argc];
+      |                   ^~~~~~~~~~~~
+      |                   sched_getparam
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a3e84.dir/build.make:78: CMakeFiles/cmTC_a3e84.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Uv88XC'
+gmake: *** [Makefile:127: cmTC_a3e84/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sched.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sched_getcpu
+  return ((int*)(&sched_getcpu))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the res_ndestroy exist failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c5f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c5f3.dir/build.make CMakeFiles/cmTC_3c5f3.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9'
+Building C object CMakeFiles/cmTC_3c5f3.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700  -std=c99 -o CMakeFiles/cmTC_3c5f3.dir/CheckSymbolExists.c.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9/CheckSymbolExists.c
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9/CheckSymbolExists.c: In function ‘main’:
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9/CheckSymbolExists.c:11:19: error: ‘res_ndestroy’ undeclared (first use in this function)
+   11 |   return ((int*)(&res_ndestroy))[argc];
+      |                   ^~~~~~~~~~~~
+/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9/CheckSymbolExists.c:11:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_3c5f3.dir/build.make:78: CMakeFiles/cmTC_3c5f3.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/CMakeFiles/CMakeScratch/TryCompile-Mau1R9'
+gmake: *** [Makefile:127: cmTC_3c5f3/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+#include <sys/types.h>
+#include <arpa/nameser.h>
+#include <resolv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef res_ndestroy
+  return ((int*)(&res_ndestroy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

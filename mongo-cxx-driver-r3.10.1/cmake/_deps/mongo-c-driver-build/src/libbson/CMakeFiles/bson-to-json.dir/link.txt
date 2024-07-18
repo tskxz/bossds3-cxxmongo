@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG "CMakeFiles/bson-to-json.dir/examples/bson-to-json.c.o" -o bson-to-json  -Wl,-rpath,/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/_deps/mongo-c-driver-build/src/libbson libbson-1.0.so.0.0.0 /usr/lib/x86_64-linux-gnu/librt.a -lm 

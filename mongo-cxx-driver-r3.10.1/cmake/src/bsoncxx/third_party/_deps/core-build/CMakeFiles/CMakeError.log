@@ -1,0 +1,48 @@
+Performing C++ SOURCE FILE Test CAN_USE_STDLIB_LIBCXX failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-AiRJfq
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e8efb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e8efb.dir/build.make CMakeFiles/cmTC_e8efb.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-AiRJfq'
+Building CXX object CMakeFiles/cmTC_e8efb.dir/src.cxx.o
+/usr/bin/c++ -DCAN_USE_STDLIB_LIBCXX  -stdlib=libc++ -o CMakeFiles/cmTC_e8efb.dir/src.cxx.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-AiRJfq/src.cxx
+c++: error: unrecognized command-line option '-stdlib=libc++'
+gmake[1]: *** [CMakeFiles/cmTC_e8efb.dir/build.make:78: CMakeFiles/cmTC_e8efb.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-AiRJfq'
+gmake: *** [Makefile:127: cmTC_e8efb/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test CAN_WARN_EVERYTHING failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-c8u2qi
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8adfb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8adfb.dir/build.make CMakeFiles/cmTC_8adfb.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-c8u2qi'
+Building CXX object CMakeFiles/cmTC_8adfb.dir/src.cxx.o
+/usr/bin/c++ -DCAN_WARN_EVERYTHING  -Weverything -o CMakeFiles/cmTC_8adfb.dir/src.cxx.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-c8u2qi/src.cxx
+c++: error: unrecognized command-line option '-Weverything'
+gmake[1]: *** [CMakeFiles/cmTC_8adfb.dir/build.make:78: CMakeFiles/cmTC_8adfb.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-c8u2qi'
+gmake: *** [Makefile:127: cmTC_8adfb/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test CAN_WARN_ONE_LINE failed with the following output:
+Change Dir: /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-eFbvgR
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a3649/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a3649.dir/build.make CMakeFiles/cmTC_a3649.dir/build
+gmake[1]: Entering directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-eFbvgR'
+Building CXX object CMakeFiles/cmTC_a3649.dir/src.cxx.o
+/usr/bin/c++ -DCAN_WARN_ONE_LINE  -WL -o CMakeFiles/cmTC_a3649.dir/src.cxx.o -c /home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-eFbvgR/src.cxx
+c++: error: unrecognized command-line option '-WL'; did you mean '-L'?
+gmake[1]: *** [CMakeFiles/cmTC_a3649.dir/build.make:78: CMakeFiles/cmTC_a3649.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/tanjil/bossds3-cxxmongo/mongo-cxx-driver-r3.10.1/cmake/src/bsoncxx/third_party/_deps/core-build/CMakeFiles/CMakeScratch/TryCompile-eFbvgR'
+gmake: *** [Makefile:127: cmTC_a3649/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+
