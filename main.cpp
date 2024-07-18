@@ -66,8 +66,24 @@ int main() {
     // Insert Multiple Documents: { "i": 1 } and { "i": 2 }
     {
         std::vector<bsoncxx::document::value> documents;
-        documents.push_back(make_document(kvp("Vordt of the Boreal Valley", "High Wall of Lothric")));
-        documents.push_back(make_document(kvp("Curse-Rotted Greatwood", "Undead Settlement")));
+        documents.push_back(make_document(kvp("name", "Vordt of the Boreal Valley")));
+        documents.push_back(make_document(kvp("name", "Curse-Rotted Greatwood")));
+        documents.push_back(make_document(kvp("name", "Crystal Sage")));
+        documents.push_back(make_document(kvp("name", "Abyss Watchers")));
+        documents.push_back(make_document(kvp("name", "Deacons of the Deep")));
+        documents.push_back(make_document(kvp("name", "High Lord of Wolnir")));
+        documents.push_back(make_document(kvp("name", "Old Demon King")));
+        documents.push_back(make_document(kvp("name", "Pontiff Sulyvahn")));
+        documents.push_back(make_document(kvp("name", "Yhorm the Giant")));
+        documents.push_back(make_document(kvp("name", "Aldrich, Devourer of Gods")));
+        documents.push_back(make_document(kvp("name", "Dancer of the Boreal Valley")));
+        documents.push_back(make_document(kvp("name", "Dragonslayer Armour")));
+        documents.push_back(make_document(kvp("name", "Oceiros, the Consumed King")));
+        documents.push_back(make_document(kvp("name", "Champion Gundyr")));
+        documents.push_back(make_document(kvp("name", "Lothric, Younger Prince")));
+        documents.push_back(make_document(kvp("name", "Ancient Wyvern")));
+        documents.push_back(make_document(kvp("name", "Nameless King")));
+        documents.push_back(make_document(kvp("name", "Soul of Cinder")));
 
         auto insert_many_result = collection.insert_many(documents);
         assert(insert_many_result);  // Acknowledged writes return results.
