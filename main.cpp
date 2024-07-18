@@ -133,36 +133,67 @@ int main() {
             documents.push_back(make_document(kvp("name", "Soul of Cinder")));
         }
 
-        auto insert_many_result = collection_bosses.insert_many(documents);
-        assert(insert_many_result);  // Acknowledged writes return results.
-        auto doc0_id = insert_many_result->inserted_ids().at(0);
-        auto doc1_id = insert_many_result->inserted_ids().at(1);
-        assert(doc0_id.type() == bsoncxx::type::k_oid);
-        assert(doc1_id.type() == bsoncxx::type::k_oid);
+        if(!documents.empty()){
+            auto insert_many_result = collection_bosses.insert_many(documents);
+            assert(insert_many_result);
+        }
     }
 
     {
         std::vector<bsoncxx::document::value> locations;
+        if (!check_if_exists(collection_locations, "name", "Cemetery of Ash")) {
         locations.push_back(make_document(kvp("name", "Cemetery of Ash")));
-        locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
-        locations.push_back(make_document(kvp("name", "Undead Settlement")));
-        locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
-        locations.push_back(make_document(kvp("name", "Farron Keep")));
-        locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
-        locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
-        locations.push_back(make_document(kvp("name", "Smouldering Lake")));
-        locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
-        locations.push_back(make_document(kvp("name", "Profaned Capital")));
-        locations.push_back(make_document(kvp("name", "Anor Londo")));
-        locations.push_back(make_document(kvp("name", "Lothric Castle")));
-        locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
-        locations.push_back(make_document(kvp("name", "Untended Graves")));
-        locations.push_back(make_document(kvp("name", "Archdragon Peak")));
-        locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+        }
+        if (!check_if_exists(collection_locations, "name", "High Wall of Lothric")) {
+            locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Undead Settlement")) {
+            locations.push_back(make_document(kvp("name", "Undead Settlement")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Road of Sacrifices")) {
+            locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Farron Keep")) {
+            locations.push_back(make_document(kvp("name", "Farron Keep")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Cathedral of the Deep")) {
+            locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Catacombs of Carthus")) {
+            locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Smouldering Lake")) {
+            locations.push_back(make_document(kvp("name", "Smouldering Lake")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Irithyll of the Boreal Valley")) {
+            locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Profaned Capital")) {
+            locations.push_back(make_document(kvp("name", "Profaned Capital")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Anor Londo")) {
+            locations.push_back(make_document(kvp("name", "Anor Londo")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Lothric Castle")) {
+            locations.push_back(make_document(kvp("name", "Lothric Castle")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Consumed King's Garden")) {
+            locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Untended Graves")) {
+            locations.push_back(make_document(kvp("name", "Untended Graves")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Archdragon Peak")) {
+            locations.push_back(make_document(kvp("name", "Archdragon Peak")));
+        }
+        if (!check_if_exists(collection_locations, "name", "Kiln of the First Flame")) {
+            locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+        }
 
-        auto insert_many_locations_result = collection_locations.insert_many(locations);
-        assert(insert_many_locations_result);  // Acknowledged writes return results.
-        
+        if (!locations.empty()) {
+            auto insert_many_locations_result = collection_locations.insert_many(locations);
+            assert(insert_many_locations_result);  // Acknowledged writes return results.
+        }
     }
     /*
     // Find a Single Document in a Collection
