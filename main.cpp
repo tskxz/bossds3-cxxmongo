@@ -327,6 +327,7 @@ int main() {
     */
 
     // Find All Documents in a Boss Collection
+        /*
     {
         auto cursor_all = collection_bosses.find({});
         for (auto doc : cursor_all) {
@@ -334,6 +335,9 @@ int main() {
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
         }
     }
+    */
+
+        /*
 
     // Find all Documents in Locations Collection
     {
@@ -343,7 +347,8 @@ int main() {
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
         }
     }
-
+    */
+        /*
     // Print All Documents in a Collection
     {
         auto cursor_all = collection_bosses.find({});
@@ -353,7 +358,8 @@ int main() {
             std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
         }
         std::cout << std::endl;
-    }
+    }*/
+        /*
 
     // Print All Documents in a Locations Collection
     {
@@ -365,19 +371,27 @@ int main() {
         }
         std::cout << std::endl;
     }
-
+*/
     std::cout << " =========================================== " << std::endl;
     std::cout << "1. See bosses collection" << std::endl;
     std::cout << "2. See locations collection" << std::endl;
     std::cout << "0. Quit" << std::endl;
     
     int menu_choice;
+    auto cursor_all = collection_bosses.find({});
     do {
         std::cout << "Type your choice: ";
         std::cin >> menu_choice;
         switch(menu_choice){
         case 1:
             std::cout << "== Bosses ==" << std::endl;
+            
+            std::cout << "collection " << collection_bosses.name() << " contains these documents: " << std::endl;
+            for(auto doc : cursor_all){
+                std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+            }
+            std::cout << std::endl;
+            return 0;
             break;
         case 2:
             std::cout << "== Location ==" << std::endl;
