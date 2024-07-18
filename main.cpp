@@ -78,50 +78,78 @@ int main() {
             locations.push_back(cemetery_of_ash);
         }
 
+        bsoncxx::document::value high_wall_of_lothric = make_document(kvp("name", "High Wall of Lothric"));
         if (!check_if_exists(collection_locations, "name", "High Wall of Lothric")) {
-            locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
+            locations.push_back(high_wall_of_lothric);
         }
+
+        bsoncxx::document::value undead_settlement = make_document(kvp("name", "Undead Settlement"));
         if (!check_if_exists(collection_locations, "name", "Undead Settlement")) {
-            locations.push_back(make_document(kvp("name", "Undead Settlement")));
+            locations.push_back(undead_settlement);
         }
+
+        bsoncxx::document::value road_of_sacrifices = make_document(kvp("name", "Road of Sacrifices"));
         if (!check_if_exists(collection_locations, "name", "Road of Sacrifices")) {
-            locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
+            locations.push_back(road_of_sacrifices);
         }
+
+        bsoncxx::document::value farron_keep = make_document(kvp("name", "Farron Keep"));
         if (!check_if_exists(collection_locations, "name", "Farron Keep")) {
-            locations.push_back(make_document(kvp("name", "Farron Keep")));
+            locations.push_back(farron_keep);
         }
+
+        bsoncxx::document::value cathedral_of_the_deep = make_document(kvp("name", "Cathedral of the Deep"));
         if (!check_if_exists(collection_locations, "name", "Cathedral of the Deep")) {
-            locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
+            locations.push_back(cathedral_of_the_deep);
         }
+        bsoncxx::document::value catacombs_of_carthus = make_document(kvp("name", "Catacombs of Carthus"));
         if (!check_if_exists(collection_locations, "name", "Catacombs of Carthus")) {
-            locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
+            locations.push_back(catacombs_of_carthus);
         }
+
+        bsoncxx::document::value smouldering_lake = make_document(kvp("name", "Smouldering Lake"));
         if (!check_if_exists(collection_locations, "name", "Smouldering Lake")) {
-            locations.push_back(make_document(kvp("name", "Smouldering Lake")));
+            locations.push_back(smouldering_lake);
         }
+
+        bsoncxx::document::value irithyll_of_the_boreal_valley = make_document(kvp("name", "Irithyll of the Boreal Valley"));
         if (!check_if_exists(collection_locations, "name", "Irithyll of the Boreal Valley")) {
-            locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
+            locations.push_back(irithyll_of_the_boreal_valley);
         }
+
+        bsoncxx::document::value profaned_capital = make_document(kvp("name", "Profaned Capital"));
         if (!check_if_exists(collection_locations, "name", "Profaned Capital")) {
-            locations.push_back(make_document(kvp("name", "Profaned Capital")));
+            locations.push_back(profaned_capital);
         }
+
+        bsoncxx::document::value anor_londo = make_document(kvp("name", "Anor Londo"));
         if (!check_if_exists(collection_locations, "name", "Anor Londo")) {
-            locations.push_back(make_document(kvp("name", "Anor Londo")));
+            locations.push_back(anor_londo);
         }
+
+        bsoncxx::document::value lothric_castle = make_document(kvp("name", "Lothric Castle"));
         if (!check_if_exists(collection_locations, "name", "Lothric Castle")) {
-            locations.push_back(make_document(kvp("name", "Lothric Castle")));
+            locations.push_back(lothric_castle);
         }
+
+        bsoncxx::document::value consumed_kings_garden = make_document(kvp("name", "Consumed King's Garden"));
         if (!check_if_exists(collection_locations, "name", "Consumed King's Garden")) {
-            locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
+            locations.push_back(consumed_kings_garden);
         }
+
+        bsoncxx::document::value untended_graves = make_document(kvp("name", "Untended Graves"));
         if (!check_if_exists(collection_locations, "name", "Untended Graves")) {
-            locations.push_back(make_document(kvp("name", "Untended Graves")));
+            locations.push_back(untended_graves);
         }
+
+        bsoncxx::document::value archdragon_peak = make_document(kvp("name", "Archdragon Peak"));
         if (!check_if_exists(collection_locations, "name", "Archdragon Peak")) {
-            locations.push_back(make_document(kvp("name", "Archdragon Peak")));
+            locations.push_back(archdragon_peak);
         }
+
+        bsoncxx::document::value kiln_of_the_first_flame = make_document(kvp("name", "Kiln of the First Flame"));
         if (!check_if_exists(collection_locations, "name", "Kiln of the First Flame")) {
-            locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+            locations.push_back(kiln_of_the_first_flame);
         }
 
         if (!locations.empty()) {
