@@ -93,6 +93,26 @@ int main() {
         assert(doc1_id.type() == bsoncxx::type::k_oid);
     }
 
+    {
+        std::vector<bsoncxx::document::value> locations;
+        locations.push_back(make_document(kvp("name", "Cemetery of Ash")));
+        locations.push_back(make_document(kvp("name", "High Wall of Lothric")));
+        locations.push_back(make_document(kvp("name", "Undead Settlement")));
+        locations.push_back(make_document(kvp("name", "Road of Sacrifices")));
+        locations.push_back(make_document(kvp("name", "Farron Keep")));
+        locations.push_back(make_document(kvp("name", "Cathedral of the Deep")));
+        locations.push_back(make_document(kvp("name", "Catacombs of Carthus")));
+        locations.push_back(make_document(kvp("name", "Smouldering Lake")));
+        locations.push_back(make_document(kvp("name", "Irithyll of the Boreal Valley")));
+        locations.push_back(make_document(kvp("name", "Profaned Capital")));
+        locations.push_back(make_document(kvp("name", "Anor Londo")));
+        locations.push_back(make_document(kvp("name", "Lothric Castle")));
+        locations.push_back(make_document(kvp("name", "Consumed King's Garden")));
+        locations.push_back(make_document(kvp("name", "Untended Graves")));
+        locations.push_back(make_document(kvp("name", "Archdragon Peak")));
+        locations.push_back(make_document(kvp("name", "Kiln of the First Flame")));
+    }
+
     // Find a Single Document in a Collection
     {
         auto find_one_result = collection.find_one({});
