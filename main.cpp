@@ -365,6 +365,31 @@ int main() {
         }
         std::cout << std::endl;
     }
+
+    std::cout << " =========================================== " << std::endl;
+    std::cout << "1. See bosses collection" << std::endl;
+    std::cout << "2. See locations collection" << std::endl;
+    std::cout << "0. Quit" << std::endl;
+    
+    int menu_choice;
+    do {
+        std::cout << "Type your choice: ";
+        std::cin >> menu_choice;
+        switch(menu_choice){
+        case 1:
+            std::cout << "== Bosses ==" << std::endl;
+            break;
+        case 2:
+            std::cout << "== Location ==" << std::endl;
+            break;
+        default:
+            std::cout << "Bye!" << std::endl;
+            return 0;
+            break;
+        }
+    } while(menu_choice != 0);
+    
+
     /*
     // Get A Single Document That Matches a Filter
     {
