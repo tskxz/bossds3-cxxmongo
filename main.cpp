@@ -171,59 +171,141 @@ int main() {
         }
         
         if(!check_if_exists(collection_bosses, "name", "Vordt of the Boreal Valley")){
-            documents.push_back(make_document(kvp("name", "Vordt of the Boreal Valley")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "Vordt of the Boreal Valley"),
+                    kvp("location", high_wall_of_lothric)
+                ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Curse-Rotted Greatwood")){
-            documents.push_back(make_document(kvp("name", "Curse-Rotted Greatwood")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "Curse-Rotted Greatwood"),
+                    kvp("location", undead_settlement)
+                ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Crystal Sage")){
-            documents.push_back(make_document(kvp("name", "Crystal Sage")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "Crystal Sage"),
+                    kvp("location", road_of_sacrifices)
+                ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Abyss Watchers")){
-            documents.push_back(make_document(kvp("name", "Abyss Watchers")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "Abyss Watchers"),
+                    kvp("location", farron_keep)
+                ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Deacons of the Deep")){
-            documents.push_back(make_document(kvp("name", "Deacons of the Deep")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "Deacons of the Deep"),
+                    kvp("location", cathedral_of_the_deep)
+                ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "High Lord of Wolnir")){
-            documents.push_back(make_document(kvp("name", "High Lord of Wolnir")));
+            documents.push_back(
+                make_document(
+                    kvp("name", "High Lord of Wolnir"),
+                    kvp("location", catacombs_of_carthus)
+                ));
 
         }
+
+
         if(!check_if_exists(collection_bosses, "name", "Old Demon King")){
-            documents.push_back(make_document(kvp("name", "Old Demon King")));
+            documents.push_back(make_document(
+                kvp("name", "Old Demon King"),
+                kvp("location", smouldering_lake)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Pontiff Sulyvahn")){
-            documents.push_back(make_document(kvp("name", "Pontiff Sulyvahn")));
+            documents.push_back(make_document(
+                kvp("name", "Pontiff Sulyvahn"),
+                kvp("location", irithyll_of_the_boreal_valley)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Yhorm the Giant")){
-            documents.push_back(make_document(kvp("name", "Yhorm the Giant")));
+            documents.push_back(make_document(
+                kvp("name", "Yhorm the Giant"),
+                kvp("location", profaned_capital)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Aldrich, Devorer of Gods")){
-            documents.push_back(make_document(kvp("name", "Aldrich, Devourer of Gods")));
+            documents.push_back(make_document(
+                kvp("name", "Aldrich, Devourer of Gods"),
+                kvp("location", anor_londo)
+            ));
         }
+
+
         if(!check_if_exists(collection_bosses, "name", "Dancer of the Boreal Valley")){
-            documents.push_back(make_document(kvp("name", "Dancer of the Boreal Valley")));
+            documents.push_back(make_document(
+                kvp("name", "Dancer of the Boreal Valley"),
+                kvp("location", high_wall_of_lothric)
+            ));
         }
+
+
         if(!check_if_exists(collection_bosses, "name", "Dragonslayer Armour")){
-            documents.push_back(make_document(kvp("name", "Dragonslayer Armour")));
+            documents.push_back(make_document(
+                kvp("name", "Dragonslayer Armour"),
+                kvp("location", lothric_castle)
+            ));
         }
+
+
         if(!check_if_exists(collection_bosses, "name", "Oceiros, the Consumed King")){
-            documents.push_back(make_document(kvp("name", "Oceiros, the Consumed King")));
+            documents.push_back(make_document(
+                kvp("name", "Oceiros, the Consumed King"),
+                kvp("location", consumed_kings_garden)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Champion Gundyr")){
-            documents.push_back(make_document(kvp("name", "Champion Gundyr")));
+            documents.push_back(make_document(
+                kvp("name", "Champion Gundyr"),
+                kvp("location", untended_graves)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Lothric, Younger Prince")){
-            documents.push_back(make_document(kvp("name", "Lothric, Younger Prince")));
+            documents.push_back(make_document(
+                kvp("name", "Lothric, Younger Prince"),
+                kvp("location", lothric_castle)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Ancient Wyvern")){
-            documents.push_back(make_document(kvp("name", "Ancient Wyvern")));
+            documents.push_back(make_document(
+                kvp("name", "Ancient Wyvern"),
+                kvp("location", archdragon_peak)
+            ));
         }
+
         if(!check_if_exists(collection_bosses, "name", "Nameless King")){
-            documents.push_back(make_document(kvp("name", "Nameless King")));
+            documents.push_back(make_document(
+                kvp("name", "Nameless King"),
+                kvp("location", archdragon_peak)
+            ));
         }
+
+
         if(!check_if_exists(collection_bosses, "name", "Soul of Cinder")){
-            documents.push_back(make_document(kvp("name", "Soul of Cinder")));
+            documents.push_back(make_document(
+                kvp("name", "Soul of Cinder"),
+                kvp("location", kiln_of_the_first_flame)
+            ));
         }
 
         if(!documents.empty()){
