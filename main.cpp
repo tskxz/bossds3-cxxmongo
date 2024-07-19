@@ -372,7 +372,7 @@ int main() {
         }
         std::cout << std::endl;
     }
-*/
+*/  
     std::cout << " =========================================== " << std::endl;
     std::cout << "1. See bosses collection" << std::endl;
     std::cout << "2. See locations collection" << std::endl;
@@ -401,10 +401,15 @@ int main() {
             break;
         case 3:
             std::cout << "Name of the boss: ";
-            std::cin >> boss_name; 
+            std::cin >> boss_name;
             {
-                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", "Soul of Cinder")));
-                std::cout << "found!" << std::endl;
+                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", boss_name)));
+                if(find_one_boss){
+                    std::cout << "found" << std::endl;
+                } else {
+                    std::cout << "not found" << std::endl;
+                }
+                
             }
             return 0;
             break;
