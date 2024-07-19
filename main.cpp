@@ -404,7 +404,10 @@ int main() {
         case 3:
             std::cout << "List of the bosses" << std::endl;
             for(auto doc : cursor_all){
-                std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+                if(doc["name"]){
+                    std::cout << doc["name"].get_utf8().value << std::endl;
+                }
+                
             }
              std::cout << std::endl;
             return 0;
