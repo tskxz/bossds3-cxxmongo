@@ -13,6 +13,7 @@
 #include <mongocxx/instance.hpp>
 #include <mongocxx/stdx.hpp>
 #include <mongocxx/uri.hpp>
+#include <string>
 
 // Redefine assert after including headers. Release builds may undefine the assert macro and result
 // in -Wunused-variable warnings.
@@ -375,9 +376,11 @@ int main() {
     std::cout << " =========================================== " << std::endl;
     std::cout << "1. See bosses collection" << std::endl;
     std::cout << "2. See locations collection" << std::endl;
+    std::cout << "3. See a specific boss info" << std::endl;
     std::cout << "0. Quit" << std::endl;
     
     int menu_choice;
+    std::string boss_name;
     auto cursor_all = collection_bosses.find({});
     do {
         std::cout << "Type your choice: ";
@@ -396,6 +399,16 @@ int main() {
         case 2:
             std::cout << "== Location ==" << std::endl;
             break;
+        case 3:
+            std::cout << "Name of the boss: ";
+            std::cin >> boss_name; 
+            {
+                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", "Soul of Cinder")));
+                std::cout << "found!" << std::endl;
+            }
+            return 0;
+            break;
+
         default:
             std::cout << "Bye!" << std::endl;
             return 0;
