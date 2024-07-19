@@ -384,6 +384,7 @@ int main() {
     int menu_choice;
     std::string boss_name;
     auto cursor_all = collection_bosses.find({});
+    int boss_count = 0;
     do {
         std::cout << "Type your choice: ";
         std::cin >> menu_choice;
@@ -404,12 +405,14 @@ int main() {
         case 3:
             std::cout << "List of the bosses" << std::endl;
             for(auto doc : cursor_all){
+                boss_count++;
                 if(doc["name"]){
                     std::cout << doc["name"].get_utf8().value << std::endl;
                 }
                 
             }
-             std::cout << std::endl;
+            std::cout << std::endl;
+            std::cout << "Number of bosses: " << boss_count << std::endl;
             return 0;
             break;
         case 4:
