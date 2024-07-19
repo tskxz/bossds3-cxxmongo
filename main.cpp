@@ -1,4 +1,5 @@
 // Compile with: c++ --std=c++11 main.cpp $(pkg-config --cflags --libs libmongocxx)
+// Run export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 // The following is a formatted copy from the tutorial
 // https://www.mongodb.com/docs/languages/cpp/drivers/current/tutorial/.
@@ -377,6 +378,7 @@ int main() {
     std::cout << "1. See bosses collection" << std::endl;
     std::cout << "2. See locations collection" << std::endl;
     std::cout << "3. See a specific boss info" << std::endl;
+    std::cout << "4. Delete database" << std::endl;
     std::cout << "0. Quit" << std::endl;
     
     int menu_choice;
@@ -400,20 +402,23 @@ int main() {
             std::cout << "== Location ==" << std::endl;
             break;
         case 3:
-            std::cout << "Name of the boss: ";
-            std::cin >> boss_name;
-            {
-                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", boss_name)));
-                if(find_one_boss){
-                    std::cout << "found" << std::endl;
-                } else {
-                    std::cout << "not found" << std::endl;
-                }
-                
+            std::cout << "List of the bosses" << std::endl;
+            for(auto doc : cursor_all){
+                std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
             }
+             std::cout << std::endl;
             return 0;
             break;
-
+        case 4:
+            std::cout << "Do you want to drop database ? [1/0]" << std::endl;
+            int input;
+            std::cin >> input;
+            if(input == 1) {
+                collection_bosses.drop();
+                collection_locations.drop();
+            } else {
+                return 0;
+            }
         default:
             std::cout << "Bye!" << std::endl;
             return 0;
@@ -493,15 +498,7 @@ int main() {
 
     
     // Drop collection to clean up.
-    std::cout << "Do you want to drop database ? [1/0]" << std::endl;
-    int input;
-    std::cin >> input;
-    if(input == 1) {
-        collection_bosses.drop();
-        collection_locations.drop();
-    } else {
-        return 0;
-    }
+    
     // collection_bosses.drop();
     // collection_locations.drop();
     
