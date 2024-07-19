@@ -1,4 +1,5 @@
 // Compile with: c++ --std=c++11 main.cpp $(pkg-config --cflags --libs libmongocxx)
+// Run export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 // The following is a formatted copy from the tutorial
 // https://www.mongodb.com/docs/languages/cpp/drivers/current/tutorial/.
@@ -13,6 +14,7 @@
 #include <mongocxx/instance.hpp>
 #include <mongocxx/stdx.hpp>
 #include <mongocxx/uri.hpp>
+#include <string>
 
 // Redefine assert after including headers. Release builds may undefine the assert macro and result
 // in -Wunused-variable warnings.
@@ -327,6 +329,7 @@ int main() {
     */
 
     // Find All Documents in a Boss Collection
+        /*
     {
         auto cursor_all = collection_bosses.find({});
         for (auto doc : cursor_all) {
@@ -334,6 +337,9 @@ int main() {
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
         }
     }
+    */
+
+        /*
 
     // Find all Documents in Locations Collection
     {
@@ -343,7 +349,8 @@ int main() {
             assert(doc["_id"].type() == bsoncxx::type::k_oid);
         }
     }
-
+    */
+        /*
     // Print All Documents in a Collection
     {
         auto cursor_all = collection_bosses.find({});
@@ -353,7 +360,8 @@ int main() {
             std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
         }
         std::cout << std::endl;
-    }
+    }*/
+        /*
 
     // Print All Documents in a Locations Collection
     {
@@ -365,6 +373,85 @@ int main() {
         }
         std::cout << std::endl;
     }
+*/  
+    std::cout << " =========================================== " << std::endl;
+    std::cout << "1. See bosses collection" << std::endl;
+    std::cout << "2. See locations collection" << std::endl;
+    std::cout << "3. See a specific boss info" << std::endl;
+    std::cout << "4. Delete database" << std::endl;
+    std::cout << "0. Quit" << std::endl;
+    
+    int menu_choice;
+    std::string boss_name;
+    auto cursor_all = collection_bosses.find({});
+    int boss_count = 0;
+    int choice_boss;
+    std::vector<std::string> boss_names;
+    do {
+        std::cout << "Type your choice: ";
+        std::cin >> menu_choice;
+        switch(menu_choice){
+        case 1:
+            std::cout << "== Bosses ==" << std::endl;
+            
+            std::cout << "collection " << collection_bosses.name() << " contains these documents: " << std::endl;
+            for(auto doc : cursor_all){
+                std::cout << bsoncxx::to_json(doc, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+            }
+            std::cout << std::endl;
+            return 0;
+            break;
+        case 2:
+            std::cout << "== Location ==" << std::endl;
+            break;
+        case 3:
+            std::cout << "List of the bosses" << std::endl;
+            for(auto doc : cursor_all){
+                
+                if(doc["name"]){
+                    std::cout << boss_count + 1 << ". " << doc["name"].get_utf8().value << std::endl;
+                    boss_names.push_back(doc["name"].get_utf8().value.to_string());
+                }
+                boss_count++;
+                
+            }
+            std::cout << std::endl;
+            std::cout << "Number of bosses: " << boss_count << std::endl;
+            std::cout << "Choose a boss: ";
+            std::cin >> choice_boss;
+            if(choice_boss > 0 && choice_boss <= boss_count){
+                std::string chosen_boss_name = boss_names[choice_boss - 1];
+                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", chosen_boss_name)));
+                if(find_one_boss){
+                    std::cout << "INFO FOR THAT BOSS:" << std::endl;
+                    std::cout << bsoncxx::to_json(*find_one_boss, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+                } else {
+                    std::cout << "boss not found";
+                }
+            } else {
+                std::cout << "invalid choice!";
+            }
+
+            return 0;
+            break;
+        case 4:
+            std::cout << "Do you want to drop database ? [1/0]" << std::endl;
+            int input;
+            std::cin >> input;
+            if(input == 1) {
+                collection_bosses.drop();
+                collection_locations.drop();
+            } else {
+                return 0;
+            }
+        default:
+            std::cout << "Bye!" << std::endl;
+            return 0;
+            break;
+        }
+    } while(menu_choice != 0);
+    
+
     /*
     // Get A Single Document That Matches a Filter
     {
@@ -436,15 +523,7 @@ int main() {
 
     
     // Drop collection to clean up.
-    std::cout << "Do you want to drop database ? [1/0]" << std::endl;
-    int input;
-    std::cin >> input;
-    if(input == 1) {
-        collection_bosses.drop();
-        collection_locations.drop();
-    } else {
-        return 0;
-    }
+    
     // collection_bosses.drop();
     // collection_locations.drop();
     
