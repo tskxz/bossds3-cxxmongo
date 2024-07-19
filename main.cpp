@@ -385,6 +385,8 @@ int main() {
     std::string boss_name;
     auto cursor_all = collection_bosses.find({});
     int boss_count = 0;
+    int choice_boss;
+    std::vector<std::string> boss_names;
     do {
         std::cout << "Type your choice: ";
         std::cin >> menu_choice;
@@ -405,14 +407,31 @@ int main() {
         case 3:
             std::cout << "List of the bosses" << std::endl;
             for(auto doc : cursor_all){
-                boss_count++;
+                
                 if(doc["name"]){
-                    std::cout << doc["name"].get_utf8().value << std::endl;
+                    std::cout << boss_count + 1 << ". " << doc["name"].get_utf8().value << std::endl;
+                    boss_names.push_back(doc["name"].get_utf8().value.to_string());
                 }
+                boss_count++;
                 
             }
             std::cout << std::endl;
             std::cout << "Number of bosses: " << boss_count << std::endl;
+            std::cout << "Choose a boss: ";
+            std::cin >> choice_boss;
+            if(choice_boss > 0 && choice_boss <= boss_count){
+                std::string chosen_boss_name = boss_names[choice_boss - 1];
+                auto find_one_boss = collection_bosses.find_one(make_document(kvp("name", chosen_boss_name)));
+                if(find_one_boss){
+                    std::cout << "INFO FOR THAT BOSS:" << std::endl;
+                    std::cout << bsoncxx::to_json(*find_one_boss, bsoncxx::ExtendedJsonMode::k_relaxed) << std::endl;
+                } else {
+                    std::cout << "boss not found";
+                }
+            } else {
+                std::cout << "invalid choice!";
+            }
+
             return 0;
             break;
         case 4:
